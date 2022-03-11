@@ -3,9 +3,9 @@ datos={};
 datos.nombre=document.getElementById('nombre').value;
 datos.apellido=document.getElementById('apellido').value;
 datos.telefono=document.getElementById('telefono').value;
-datos.email=document.getElementById('email').value;
+datos.email=document.getElementById('correo').value;
 datos.direccion=document.getElementById('direccion').value;
-datos.password=document.getElementById('password').value;
+datos.contraseña=document.getElementById('password').value;
 
 const request = await fetch('https://panelazo7.herokuapp.com/registrarUser', {
   method: 'POST',
@@ -15,7 +15,7 @@ const request = await fetch('https://panelazo7.herokuapp.com/registrarUser', {
     'Content-Type': 'application/json'
   },
   body: JSON.stringify(datos)
-}).then(res=>{console.log(res.status)}).catch(error=>{console.log(error)});
+}).then(res=>{console.log(res)}).catch(error=>{console.log(error)});
 
 
 }
