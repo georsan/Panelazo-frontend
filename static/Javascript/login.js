@@ -21,6 +21,7 @@ async function login(){
       window.location.href = 'user.html' 
        localStorage.datos=respuesta;
     }
+    
     }
 function cargardatos(){
   datos=localStorage.datos;

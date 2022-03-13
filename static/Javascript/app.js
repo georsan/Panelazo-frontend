@@ -127,3 +127,6 @@ function eliminarCafeLocalStorage(cafe) {
 function vaciarLocalStorage() {
     localStorage.clear();
 }
+function comparar(){
+    id_producto=document.getElementById()
+}

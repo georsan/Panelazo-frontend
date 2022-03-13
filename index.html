@@ -15,10 +15,11 @@
     <link rel="stylesheet" href="static/css/normalize.css">
     <link rel="stylesheet" href="static/css/skeleton.css">
     <link rel="stylesheet" href="static/css/custom.css">
-</head>
+</head> 
 
 </head>
-<body>
+ 
+    <body onload="getproductos()">
     
 <!-- header section starts  -->
 
@@ -29,19 +30,17 @@
     </a>
 
     <nav class="navbar">
-        <a href="#home">home</a>
-        <a href="#about">about</a>
-        <a href="#menu">menu</a>
-        <a href="#products">products</a>
-        <a href="#review">review</a>
-        <a href="#contact">contact</a>
-        <a href="#blogs">blogs</a>
+        <a href="#home">Inicio</a>
+        <a href="#about">Nosotros</a> 
+        <a href="#menu">Productos</a>
+      
     </nav>
 
     <div class="icons">
-        <div class="fas fa-search" id="search-btn"></div>
+        <!--<div class="fas fa-search" id="search-btn"></div>-->
         <!--<div class="fas fa-shopping-cart" id="cart-btn"></div>-->
         <div class="fas fa-bars" id="menu-btn"></div>
+        <a href="./Registro.html" style="color: white;">Ingresar</a>
     </div>
 
     <div class="search-form">
@@ -49,27 +48,7 @@
         <label for="search-box" class="fas fa-search"></label>
     </div>
 
-    <div class="two columns u-pull-right">
-        <ul>
-            <li class="submenu">
-                <img src="static/img/cart.png" alt="" id="img-carrito">
-                <div id="carrito">
-                    <table id="lista-carrito" class="u-full-width">
-                        <thead>
-                            <tr>
-                                <th>Imagen</th>
-                                <th>Nombre</th>
-                                <th>Precio</th>
-                                <th></th>
-                            </tr>
-                        </thead>
-                        <tbody></tbody>
-                    </table>
-                    <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
-                </div>
-            </li>
-        </ul>
-    </div>    
+   
     
 
 </header>
@@ -118,408 +97,19 @@
 <!-- menu section starts  -->
 
 <section class="menu" id="menu">
-<div id="lista-cafe" class="container">
-    <h1 id="encabezado" class="encabezado">our <span>menu</span></h1>
-    <div class="row">
-        <div class="four columns">
-            <div class="card">
-                <img src="static/img/coffee1.jpg" class="u-full-width">
-                <div class="info-card">
-                    <h4>Panela fonce pastilla x900g</h4>
-                    <p>FONCE</p>
-                    <img src="static/img/estrellas.png" >
-                    <p class="precio">$7000 <span class="u-pull-right">$6.190</span></p>
-                    <a href="#" 
-                    class="u-full-width button-primary button input agregar-carrito                        
-                    ">Agregar Al Carrito</a>
-                </div>
-            </div>
-        </div>
-        <div class="four columns">
-            <div class="card">
-                <img src="static/img/coffee2.jpg" class="u-full-width">
-                <div class="info-card">
-                    <h4>Panela La Nocaimera pastilla x 2000 g</h4>
-                    <p>Marca LA NOCAIMERA</p>
-                    <img src="static/img/estrellas.png" >
-                    <p class="precio">$12.000 <span class="u-pull-right">$11.890 </span></p>
-                    <a href="#" 
-                    class="u-full-width button-primary button input agregar-carrito                        
-                    ">Agregar Al Carrito</a>
-                </div>
-            </div>
-        </div>
-        <div class="four columns">
-            <div class="card">
-                <img src="static/img/coffee3.jpg" class="u-full-width">
-                <div class="info-card">
-                    <h4>Panela Cuadrada EKONO 400 Gr</h4>
-                    <p>Marca LA EKONO</p>
-                    <img src="static/img/estrellas.png" >
-                    <p class="precio">$2500 <span class="u-pull-right">$2000</span></p>
-                    <a href="#" 
-                    class="u-full-width button-primary button input agregar-carrito                        
-                    ">Agregar Al Carrito</a>
-                </div>
-            </div>
-        </div>
-    </div><!--.row-->
+    <div id="lista-cafe" class="container">
+        <h1 id="encabezado" class="encabezado">our <span>menu</span></h1>
+<div class="box-container" id="row">
 
-    <div class="row">
-        <div class="four columns">
-            <div class="card">
-                <img src="static/img/coffee4.jpg" class="u-full-width">
-                <div class="info-card">
-                    <h4>Panela Pulverizada X 500 Gr</h4>
-                    <p>Marca Doña Panela</p>
-                    <img src="static/img/estrellas.png" >
-                    <p class="precio">$3.500 <span class="u-pull-right">$3.150</span></p>
-                    <a href="#" 
-                    class="u-full-width button-primary button input agregar-carrito                        
-                    ">Agregar Al Carrito</a>
-                </div>
-            </div>
-        </div>
-        <div class="four columns">
-            <div class="card">
-                <img src="static/img/coffee5.jpg" class="u-full-width">
-                <div class="info-card">
-                    <h4>Panela Pulverizada X 500 Gr</h4>
-                    <p>Marca MESA BAJA</p>
-                    <img src="static/img/estrellas.png" >
-                    <p class="precio">$4.000 <span class="u-pull-right">$5.000</span></p>
-                    <a href="#" 
-                    class="u-full-width button-primary button input agregar-carrito                        
-                    ">Agregar Al Carrito</a>
-                </div>
-            </div>
-        </div>
-        <div class="four columns">
-            <div class="card">
-                <img src="static/img/coffee6.jpg" class="u-full-width">
-                <div class="info-card">
-                    <h4>Panela Pastilla DULCESITA 1000</h4>
-                    <p>Marca DULCESITA</p>
-                    <img src="static/img/estrellas.png" >
-                    <p class="precio">$5.000 <span class="u-pull-right">$4.000</span></p>
-                    <a href="#" 
-                    class="u-full-width button-primary button input agregar-carrito                        
-                    ">Agregar Al Carrito</a>
-                </div>
-            </div>
-        </div>
-    </div><!--.row-->
 
-    <div class="row">
-        <div class="four columns">
-            <div class="card">
-                <img src="static/img/coffee7.jpg" class="u-full-width">
-                <div class="info-card">
-                    <h4>CUBITOS PANELA INST LIMON DONA PANELA 300 Gr</h4>
-                    <p>Marca Doña Panela</p>
-                    <img src="static/img/estrellas.png" >
-                    <p class="precio">$5.000 <span class="u-pull-right">$4.644</span></p>
-                    <a href="#" 
-                    class="u-full-width button-primary button input agregar-carrito                        
-                    ">Agregar Al Carrito</a>
-                </div>
-            </div>
-        </div>
-        <div class="four columns">
-            <div class="card">
-                <img src="static/img/coffee8.jpg" class="u-full-width">
-                <div class="info-card">
-                    <h4>Panela 5 Unds Cuadrada FONCE 225 Gr</h4>
-                    <p>Marca Fonce</p>
-                    <img src="static/img/estrellas.png" >
-                    <p class="precio">$7.000 <span class="u-pull-right">$6.000</span></p>
-                    <a href="#" 
-                    class="u-full-width button-primary button input agregar-carrito                        
-                    ">Agregar Al Carrito</a>
-                </div>
-            </div>
-        </div>
-        <div class="four columns">
-            <div class="card">
-                <img src="static/img/coffee9.jpg" class="u-full-width">
-                <div class="info-card">
-                    <h4>Panela La Nocaimera pastilla x 1000 g</h4>
-                    <p>Marca nesca</p>
-                    <img src="static/img/estrellas.png" >
-                    <p class="precio">$6.000 <span class="u-pull-right">$5.990</span></p>
-                    <a href="#" 
-                    class="u-full-width button-primary button input agregar-carrito                        
-                    ">Agregar Al Carrito</a>
-                </div>
-            </div>
-        </div>
-    </div><!--.row-->
-
-    <div class="row">
-        <div class="four columns">
-            <div class="card">
-                <img src="static/img/coffee10.jpg" class="u-full-width">
-                <div class="info-card">
-                    <h4>Panela La Gloria cuadrada natural x1000g</h4>
-                    <p>Marca LA GLORIA</p>
-                    <img src="static/img/estrellas.png" >
-                    <p class="precio">$7.000 <span class="u-pull-right">$6.000</span></p>
-                    <a href="#" 
-                    class="u-full-width button-primary button input agregar-carrito                        
-                    ">Agregar Al Carrito</a>
-                </div>
-            </div>
-        </div>
-        <div class="four columns">
-            <div class="card">
-                <img src="static/img/coffee11.jpg" class="u-full-width">
-                <div class="info-card">
-                    <h4>Panela pastilla Máxima x900g</h4>
-                    <p>MAXIMA MP</p>
-                    <img src="static/img/estrellas.png" >
-                    <p class="precio">$5.000 <span class="u-pull-right">$4.000</span></p>
-                    <a href="#" 
-                    class="u-full-width button-primary button input agregar-carrito                        
-                    ">Agregar Al Carrito</a>
-                </div>
-            </div>
-        </div>
-        <div class="four columns">
-            <div class="card">
-                <img src="static/img/coffee12.jpg" class="u-full-width">
-                <div class="info-card">
-                    <h4>Panelin fonce redonda x900g</h4>
-                    <p>Marca fonce</p>
-                    <img src="static/img/estrellas.png" >
-                    <p class="precio">$7.000 <span class="u-pull-right">$6.000</span></p>
-                    <a href="#" 
-                    class="u-full-width button-primary button input agregar-carrito                        
-                    ">Agregar Al Carrito</a>
-                </div>
-            </div>
-        </div>
-    </div><!--.row-->
-  </div>
-</section>
-
+      </div>s
+    </section>
 <!-- menu section ends -->
 
-<section class="products" id="products">
 
-    <h1 class="heading"> our <span>products</span> </h1>
 
-    <div class="box-container">
 
-        <div class="box">
-            <div class="icons">
-                <a href="#" class="fas fa-shopping-cart"></a>
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-eye"></a>
-            </div>
-            <div class="image">
-                <img src="static/Images/product-1.png" alt="">
-            </div>
-            <div class="content">
-                <h3>fresh coffee</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <div class="price">$15.99 <span>$20.99</span></div>
-            </div>
-        </div>
 
-        <div class="box">
-            <div class="icons">
-                <a href="#" class="fas fa-shopping-cart"></a>
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-eye"></a>
-            </div>
-            <div class="image">
-                <img src="images/product-2.png" alt="">
-            </div>
-            <div class="content">
-                <h3>fresh coffee</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <div class="price">$15.99 <span>$20.99</span></div>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="icons">
-                <a href="#" class="fas fa-shopping-cart"></a>
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-eye"></a>
-            </div>
-            <div class="image">
-                <img src="images/product-3.png" alt="">
-            </div>
-            <div class="content">
-                <h3>fresh coffee</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <div class="price">$15.99 <span>$20.99</span></div>
-            </div>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- review section starts  -->
-
-<section class="review" id="review">
-
-    <h1 class="heading"> customer's <span>review</span> </h1>
-
-    <div class="box-container">
-
-        <div class="box">
-            <img src="images/quote-img.png" alt="" class="quote">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla sit libero nemo fuga sequi nobis? Necessitatibus aut laborum, nisi quas eaque laudantium consequuntur iste ex aliquam minus vel? Nemo.</p>
-            <img src="images/pic-1.png" class="user" alt="">
-            <h3>john deo</h3>
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="images/quote-img.png" alt="" class="quote">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla sit libero nemo fuga sequi nobis? Necessitatibus aut laborum, nisi quas eaque laudantium consequuntur iste ex aliquam minus vel? Nemo.</p>
-            <img src="images/pic-2.png" class="user" alt="">
-            <h3>john deo</h3>
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-            </div>
-        </div>
-        
-        <div class="box">
-            <img src="images/quote-img.png" alt="" class="quote">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla sit libero nemo fuga sequi nobis? Necessitatibus aut laborum, nisi quas eaque laudantium consequuntur iste ex aliquam minus vel? Nemo.</p>
-            <img src="images/pic-3.png" class="user" alt="">
-            <h3>john deo</h3>
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-            </div>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- review section ends -->
-
-<!-- contact section starts  -->
-
-<section class="contact" id="contact">
-
-    <h1 class="heading"> <span>contact</span> us </h1>
-
-    <div class="row">
-
-        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30153.788252261566!2d72.82321484621745!3d19.141690214227783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b63aceef0c69%3A0x2aa80cf2287dfa3b!2sJogeshwari%20West%2C%20Mumbai%2C%20Maharashtra%20400047!5e0!3m2!1sen!2sin!4v1629452077891!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
-
-        <form action="">
-            <h3>get in touch</h3>
-            <div class="inputBox">
-                <span class="fas fa-user"></span>
-                <input type="text" placeholder="name">
-            </div>
-            <div class="inputBox">
-                <span class="fas fa-envelope"></span>
-                <input type="email" placeholder="email">
-            </div>
-            <div class="inputBox">
-                <span class="fas fa-phone"></span>
-                <input type="number" placeholder="number">
-            </div>
-            <input type="submit" value="contact now" class="btn">
-        </form>
-
-    </div>
-
-</section>
-
-<!-- contact section ends -->
-
-<!-- blogs section starts  -->
-
-<section class="blogs" id="blogs">
-
-    <h1 class="heading"> our <span>blogs</span> </h1>
-
-    <div class="box-container">
-
-        <div class="box">
-            <div class="image">
-                <img src="images/blog-1.jpeg" alt="">
-            </div>
-            <div class="content">
-                <a href="#" class="title">tasty and refreshing coffee</a>
-                <span>by admin / 21st may, 2021</span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, dicta.</p>
-                <a href="#" class="btn">read more</a>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="images/blog-2.jpeg" alt="">
-            </div>
-            <div class="content">
-                <a href="#" class="title">tasty and refreshing coffee</a>
-                <span>by admin / 21st may, 2021</span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, dicta.</p>
-                <a href="#" class="btn">read more</a>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="images/blog-3.jpeg" alt="">
-            </div>
-            <div class="content">
-                <a href="#" class="title">tasty and refreshing coffee</a>
-                <span>by admin / 21st may, 2021</span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, dicta.</p>
-                <a href="#" class="btn">read more</a>
-            </div>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- blogs section ends -->
-
-<!-- footer section starts  -->
 
 <section class="footer">
 
@@ -534,15 +124,10 @@
     <div class="links">
         <a href="#">home</a>
         <a href="#">about</a>
-        <a href="#">menu</a>
-        <a href="#">products</a>
-        <a href="#">review</a>
-        <a href="#">contact</a>
-        <a href="#">blogs</a>
+        <a href="#">products</a>    
     </div>
 
-    <div class="credit">created by <span>mr. web designer</span> | all rights reserved</div>
-
+   
 </section>
 
 <!-- footer section ends -->
@@ -565,6 +150,6 @@
 
 <!-- custom js file link  -->
 <script src="static/Javascript/script.js"></script>
-<script src="static/Javascript/app.js"></script>
+<script src="static/Javascript/getProductos.js"></script>
 </body>
 </html>
